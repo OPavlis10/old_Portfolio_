@@ -1,1 +1,317 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ondřej Pavlis - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1 class="name">Ondřej Pavlis</h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="profile-section">
+                    <div class="profile-info">
+                        <div class="info-item">
+                            <span>Ondřej Pavlis</span>
+                        </div>
+                        <div class="info-item">
+                            <span>Černošice</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <h2> O mně</h2>
+                <p>Ahoj, jmenuji se Ondřej a jsem student z Černošic. Mými největšími zálibami jsou fitness a posilování, kde se snažím neustále překonávat své limity. Kromě sportu mě baví herní svět – od počítačových her až po nejnovější technologie. Fascinují mě také auta a motorky, zejména jejich technická stránka a design. Ve volném čase se věnuji programování a tvorbě webových projektů, kde mohu kombinovat svou kreativitu s technickými dovednostmi. Rád se učím nové věci a posouvám hranice svých možností.</p>
+            </section>
+
+            <section class="courses">
+                <h2> Courses</h2>
+                <div class="course-list">
+                    <div class="course-item">
+                        <button class="course-header" onclick="toggleCourse(this)">
+                            <span class="course-title">E4 Elektronika a Arduino</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="course-content">
+                            <p>Základy elektroniky a práce s Arduinem – návrh obvodů, simulace, výroba DPS, práce s mikrokontroléry a periferiemi, základy 3D modelování a 3D tisku.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="course-item">
+                        <button class="course-header" onclick="toggleCourse(this)">
+                            <span class="course-title">Letní školy AI (SPŠŠ, 29. 7. – 2. 8. 2024)</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="course-content">
+                            <p>Intenzivní letní program zaměřený na úvod do umělé inteligence, praktické workshopy a prezentace projektů.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="course-item">
+                        <button class="course-header" onclick="toggleCourse(this)">
+                            <span class="course-title">Hackdays: Linux & Networks (SPŠŠ, 18. 01. 2025)</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="course-content">
+                            <p>Praktické seznámení s Linuxem a základy síťování – terminál, připojení k síti, správa systému.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="course-item">
+                        <button class="course-header" onclick="toggleCourse(this)">
+                            <span class="course-title">Techdays (SPŠŠ, 01. 02. 2025)</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="course-content">
+                            <p>Jednodenní technologický den s odbornými prezentacemi, interaktivními stánky a přednáškami v oblasti IT a techniky.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="course-item">
+                        <button class="course-header" onclick="toggleCourse(this)">
+                            <span class="course-title">Python I online (makeITtoday, 2025)</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="course-content">
+                            <p>Základní online kurz programování v Pythonu – proměnné, cykly, podmínky, funkce, tvorba jednoduchých skriptů.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="course-item">
+                        <button class="course-header" onclick="toggleCourse(this)">
+                            <span class="course-title"> Letní škola počítačových sítí</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="course-content">
+                            <p>Konfigurace síťových zařízení (Cisco, Mikrotik), tvorba a správa linuxových a herních serverů, základy bezpečnosti sítí pomocí útoků a analýzy provozu, vysvětlení, jak funguje internet, web i Minecraft server.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="course-item">
+                        <button class="course-header" onclick="toggleCourse(this)">
+                            <span class="course-title"> Letní škola kybernetické bezpečnosti</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="course-content">
+                            <p>Pokročilejší práce s Linuxem (včetně privilege escalation), síťová bezpečnost a kryptografie, bezpečnost webů a hledání zranitelností, exploitace zranitelných systémů, steganografie, social engineering, OSINT, závěrečná soutěž typu CTF.</p>
+                        </div>
+                    </div>
+
+                    <div class="course-item">
+                        <button class="course-header" onclick="toggleCourse(this)">
+                            <span class="course-title"> Crypto and Web</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="course-content">
+                            <p>Základy kryptografie (hashe) a webových zranitelností (SQL injection).</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="certificate">
+                <h2> Certificates</h2>
+                <div class="certificates-grid">
+                    <div class="certificate-container">
+                        <img src="https://github.com/OPavlis10/OPavlis10/blob/1f75c1b71bd662856290570cebc426865cb5bb33/image.jpeg?raw=true" alt="Certificate 1" class="certificate-img">
+                    </div>
+                    <div class="certificate-container">
+                        <img src="https://github.com/OPavlis10/OPavlis10/blob/main/IMG_4765.jpeg?raw=true" alt="Certificate 2" class="certificate-img">
+                    </div>
+                    <div class="certificate-container">
+                        <img src="https://github.com/OPavlis10/OPavlis10/blob/main/IMG_4927.jpeg?raw=true" alt="Certificate 3" class="certificate-img">
+                    </div>
+                    <div class="certificate-container">
+                        <img src="https://github.com/OPavlis10/OPavlis10/blob/main/IMG_1543.jpeg?raw=true" alt="Certificate 4" class="certificate-img">
+                    </div>
+                    <div class="certificate-container">
+                        <img src="https://raw.githubusercontent.com/OPavlis10/OPavlis10/main/osvedceni_hackdays_cw_Ondr%CC%8Cej%20Pavlis.jpeg" alt="Certificate 5" class="certificate-img">
+                    </div>
+                    <div class="certificate-container">
+                        <img src="https://github.com/OPavlis10/OPavlis10/blob/main/osvedceni_hln_Ondr%CC%8Cej%20Pavlis.jpeg?raw=true" alt="Certificate 6" class="certificate-img">
+                    </div>
+                    <div class="certificate-container">
+                        <img src="https://github.com/OPavlis10/OPavlis10/blob/main/osvedceni_techdays_Ondr%CC%8Cej%20Pavlis.jpeg?raw=true" alt="Certificate 7" class="certificate-img">
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects">
+                <h2> Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>🔹 GYM Web App</h3>
+                        <p>Jednoduchá webová aplikace, která nabízí přehled cviků do posilovny i na doma, s obrázky a označenými svaly.</p>
+                        <a href="https://opavlis10.github.io/gym/" target="_blank" class="project-link">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>🔹 Caelum Bellmont – Clothing Brand</h3>
+                        <p>Můj osobní projekt – malý nezávislý obchod s originálním oblečením. Vytvářím jednoduché, stylové kousky s vlastním designem a atmosférou značky.</p>
+                        <a href="https://opavlis10.github.io/Caelum-Bellmont/" target="_blank" class="project-link">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <h3> Goggins Fitness Game</h3>
+                        <p>2D fitness RPG hra inspirovaná Davidem Gogginsem. Trénuj v posilovně, plav v bazénu, běhej na venkovní dráze. Postaveno v Pygame s možností hraní přímo v prohlížeči.</p>
+                        <a href="https://opavlis10.github.io/goggins-fitness-game/" target="_blank" class="project-link">Play Game</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills">
+                <h2> Programming Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>🔹 Python</h3>
+                        <p>Umím základy programování v jazyce Python. Dokážu tvořit skripty, řešit jednoduché úlohy a rozumím základním konstrukcím.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>🔹 HTML & základní weby</h3>
+                        <p>Dokážu vytvořit jednoduché webové stránky pomocí HTML a CSS. Umím navrhnout základní strukturu a vzhled stránky.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills">
+                <h2> Security & Network Tools</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3> Síťová analýza</h3>
+                        <div class="tool-list">
+                            <div class="tool-item">
+                                <span class="tool-name">Wireshark</span>
+                                <span class="tool-desc">Zachytávání a analýza síťového provozu</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-name">tcpdump</span>
+                                <span class="tool-desc">CLI alternativa k Wiresharku</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-name">Nmap</span>
+                                <span class="tool-desc">Skenování portů a discovery sítě</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3> Password Cracking</h3>
+                        <div class="tool-list">
+                            <div class="tool-item">
+                                <span class="tool-name">Hashcat</span>
+                                <span class="tool-desc">GPU-akcelerované lámání hashů</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-name">John the Ripper</span>
+                                <span class="tool-desc">Klasika pro offline password cracking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills">
+                <h2> Operating Systems</h2>
+                <div class="os-grid">
+                    <div class="os-card">
+                        <span class="os-icon">🪟</span>
+                        <h3>Windows</h3>
+                        <p>Hlavní pracovní systém</p>
+                    </div>
+                    <div class="os-card">
+                        <span class="os-icon">🍎</span>
+                        <h3>macOS</h3>
+                        <p>Vývoj a produktivita</p>
+                    </div>
+                    <div class="os-card">
+                        <span class="os-icon">🐉</span>
+                        <h3>Kali Linux</h3>
+                        <p>Penetrační testování a bezpečnost</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="personal-skills">
+                <h2> Personal Skills</h2>
+                <div class="personal-skills-container">
+                    <div class="personal-skill-badge">
+                        <span class="badge-icon">🔹</span>
+                        <div class="badge-content">
+                            <h4>Spolupráce</h4>
+                            <p>Baví mě pracovat v týmu, dobře komunikuji s ostatními a umím se domluvit na společném cíli.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="books">
+                <h2> Books</h2>
+                <div class="books-grid">
+                    <div class="book-card">
+                        <div class="book-image-container">
+                            <img src="https://m.media-amazon.com/images/I/81wgcld4wxL._AC_UF1000,1000_QL80_.jpg" alt="Atomic Habits" class="book-img">
+                        </div>
+                        <h3>Atomic Habits</h3>
+                        <p class="book-author">James Clear</p>
+                        <p class="book-description">Malé změny, velké výsledky. Kniha o síle návyků a jak je využít pro osobní růst.</p>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-image-container">
+                            <img src="https://m.media-amazon.com/images/I/81gTRv2HXrL._AC_UF1000,1000_QL80_.jpg" alt="Can't Hurt Me" class="book-img">
+                        </div>
+                        <h3>Can't Hurt Me</h3>
+                        <p class="book-author">David Goggins</p>
+                        <p class="book-description">Příběh o překonávání limitů a mentální odolnosti od nejtěžšího muže na světě.</p>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-image-container">
+                            <img src="https://github.com/OPavlis10/OPavlis10/blob/main/71bgQ-gxUYL._SL1500_-805480199.jpg?raw=true" alt="The Diary of a CEO" class="book-img">
+                        </div>
+                        <h3>The Diary of a CEO</h3>
+                        <p class="book-author">Steven Bartlett</p>
+                        <p class="book-description">33 zákonů úspěchu v byznysu i životě od zakladatele Social Chain.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <section class="quote-section">
+            <div class="quote-container">
+                <h2 class="quote-text">"Be uncommon amongst uncommon people."</h2>
+                <p class="quote-author">– David Goggins</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Ondřej Pavlis. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script>
+        function toggleCourse(button) {
+            const courseItem = button.parentElement;
+            const content = courseItem.querySelector('.course-content');
+            const arrow = button.querySelector('.arrow');
+            
+            courseItem.classList.toggle('active');
+            
+            if (courseItem.classList.contains('active')) {
+                arrow.style.transform = 'rotate(180deg)';
+            } else {
+                arrow.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+</html>
